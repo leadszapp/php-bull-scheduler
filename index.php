@@ -11,27 +11,19 @@ $channel = 'growp-invite-info';
 
 $dateTime = new DateTime();
 
-print_r($dateTime);
-
-$timestamp = intval(str_replace('.', '', microtime(true)));
-print_r($timestamp);
-echo "</br>";
-$timestamp = $timestamp = round(microtime(true) * 1000);
-print_r($timestamp);
-
 //die();
 
 $job = array(
     'code' => 'DKKTlRsaCE7JCNZ5e1Jh3G',
     'size' => 0,
-    'reference_id' => '191919'
+    'reference_id' => '5519981746006-1628216032'
 );
 
 
 $config = array(
     'customJobId' => str_replace('-','', $job['reference_id']),
     'jobId' => str_replace('-','', $job['reference_id']),
-    'delay' => 30000,
+    'delay' => 0,
     'removeOnComplete' => true
 );
 
